@@ -1,0 +1,53 @@
+<div class="content">
+  <div class="row">
+    <div class="col-4">
+      <input [(ngModel)]="nome" placeholder="Nome" required />
+      <input
+        [(ngModel)]="preco"
+        type="number"
+        min="0"
+        step="0.1"
+        placeholder="Preço"
+        required
+      />
+      <input
+        [(ngModel)]="quantidade"
+        type="number"
+        placeholder="Quantidade"
+        required
+      />
+      <select name="" id="">
+        <option value="">--Fornecedor--</option>
+        <option
+          value="{{ fornecedor.nome }}"
+          *ngFor="let fornecedor of fornecedor"
+        >
+          {{ fornecedor.nome }}
+        </option>
+      </select>
+      <button type="submit" (click)="cadastrar()">Cadastrar</button>
+    </div>
+    <div class="col-8">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Nome</th>
+            <th scope="col">Preco</th>
+            <th scope="col">Quantidade</th>
+            <th scope="col">Fornecedor</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td>#</td>
+            <td><a routerLink="/fornecedores">#</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>

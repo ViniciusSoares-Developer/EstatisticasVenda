@@ -1,0 +1,80 @@
+<div class="content">
+    <div class="row">
+        <div class="col-4">
+            <div class="container">
+                <select name="" id="cliente">
+                    <option value="">--Cliente--</option>
+                    <option value="Joao">Joao</option>
+                    <option value="Maria">Maria</option>
+                    <option value="Jose">Jose</option>
+                    <option value="Arlindo">Arlindo</option>
+                </select>
+                <a routerLink="/cliente">Cliente não cadastrado</a>
+            </div>
+            <div class="container row">
+                <div class="col-6">
+                    <select name="" id="produtoCliente">
+                        <option value="">--Produto--</option>
+                        <option value="Refrigerante">Refrigerante</option>
+                        <option value="Salgadinho">Salgadinho</option>
+                        <option value="Arroz">Arroz</option>
+                        <option value="Feijão">Feijão</option>
+                    </select>
+                </div>
+                <div class="col-4">
+                    <input type="number" min="0" placeholder="Quant.">
+                </div>
+                <div class="col-2 d-flex justify-content-center align-items-center">
+                    <button>+</button>
+                </div>
+            </div>
+            <div class="container">
+                <input type="datetime-local" name="" id="">
+            </div>
+            <button class="cadastroBtn">Realizar venda</button>
+        </div>
+        <div class="col-8">
+            <div class="row table-container">
+                <h4>Carrinho</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">Nome</th>
+                            <th scope="col">Quantidade</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">#</td>
+                            <td>#</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+            <div class="row table-container">
+                <h4>Vendas</h4>
+                <table class="table">
+                    <thead>
+                        <tr>
+                            <th scope="col">#</th>
+                            <th scope="col">Cliente</th>
+                            <th scope="col">Quantidade de items</th>
+                            <th scope="col">Produtos</th>
+                            <th scope="col">Data</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td scope="row">#</td>
+                            <td><a routerLink="/cliente">#</a></td>
+                            <td>--</td>
+                            <td><a routerLink="/produto">#</a></td>
+                            <td>DD/MM/YYYY HH:MM</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</div>

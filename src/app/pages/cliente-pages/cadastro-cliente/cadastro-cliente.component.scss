@@ -1,0 +1,21 @@
+input{
+    width: 100%;
+    min-height: 40px;
+    margin: 20px;
+    outline: none;
+    border-radius: 1rem;
+    border: none;
+    padding: 10px;
+}
+
+button{
+    background-color: red;
+    padding: 5px;
+    border-radius: 0.5rem;
+    border: none;
+    outline-color: white;
+    outline-offset: 0.3rem;
+    color: white;
+    font-weight: bold;
+    box-sizing: border-box;
+}

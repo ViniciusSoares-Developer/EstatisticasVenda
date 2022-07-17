@@ -1,1 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
+
+select, input{
+    width: 100%;
+    min-height: 40px;
+    outline: none;
+    border-radius: 1rem;
+    border: none;
+    padding: 10px;
+    margin: 0 0 20px 0 !important;
+}
+
+select{
+    appearance: none;
+}
+
+button{
+    background-color: red;
+    padding: 5px;
+    border-radius: 0.5rem;
+    border: none;
+    outline-color: white;
+    outline-offset: 0.3rem;
+    color: white;
+    font-weight: bold;
+    box-sizing: border-box;
+}
+
+.table-container{
+    padding: 0.5rem;
+    display: block;
+    height: 50%;
+    overflow-y: scroll;
+    box-sizing: border-box;
+    margin: 10px;
+
+    &::-webkit-scrollbar{
+        width: 5px;
+    }
+    &::-webkit-scrollbar-button{
+        display: none;
+    }
+    &::-webkit-scrollbar-track{
+        background-color: white;
+        border-radius: 1rem;
+        overflow: hidden;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-color: red;
+        border-radius: 1rem;
+    }
+}

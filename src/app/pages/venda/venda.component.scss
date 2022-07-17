@@ -1,0 +1,22 @@
+//zera a margem do select
+select, input{
+    margin: 0 !important;
+}
+//ajusta o tamanho do botao
+button:not(.cadastroBtn){
+    width: 80%;
+}
+
+//retirar o padding das divs dentro do item que tem a class container
+.container>div:nth-child(n){
+    padding: 1px;
+    width: 100%;
+}
+//coloca margem de 20px embaixo do item com a class container
+.container{
+    margin: 0 0 20px 0;
+}
+
+hr{
+    border-color: white;
+}
